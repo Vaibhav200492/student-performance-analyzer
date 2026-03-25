@@ -56,7 +56,9 @@ CORS(app)
 # ──────────────────────────────────────────────
 # 📁  JSON Storage — data saved in students.json
 # ──────────────────────────────────────────────
-DATA_FILE = os.path.join(os.path.dirname(__file__), "students.json")
+# DATA_FILE = os.path.join(os.path.dirname(__file__), "students.json")
+DATA_FILE = "/tmp/students.json"  # /tmp is the only writable dir on Vercel
+
 
 
 def load_data():
